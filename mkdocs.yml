@@ -1,0 +1,7 @@
+site_name: My site (NEW test site 3.0)
+site_url: https://pt13762104.github.io/
+theme:
+    name: material
+plugins:
+    - blog:
+          blog_dir: .
