@@ -2,8 +2,9 @@
 date: 2023-11-13
 categories:
     - Fun
+title: SymPy
 ---
-I have created a SymPy package that runs on ARM64, based on Alpine *requires Termux,proot/chroot OR any rooted computer that is ARM64 (e.g. RPi,etc.)* just for fun (to see how small it can be).
+I have created a SymPy package that runs on ARM64, based on Alpine (note: **requires Termux,proot/chroot OR any rooted computer that is ARM64 (e.g. RPi,etc.)**) just for fun (to see how small it can be).
 
 [Download link](../sympy.cmax.tgz)
 
