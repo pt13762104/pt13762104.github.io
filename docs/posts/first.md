@@ -1,7 +1,11 @@
 ---
-date: 2023-12-11 
+date: 2023-11-12
 categories:
   - My site
 ---
 
-This is my first post on ny site v3.
+This is my first post on my site v3.
+New features:
+    - Move to MkDocs
+    - Faster & less bloated
+    - ...
