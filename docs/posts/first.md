@@ -5,7 +5,8 @@ categories:
 ---
 
 This is my first post on my site v3.
-New features:
-    - Move to MkDocs
-    - Faster & less bloated
-    - ...
+
+- New features:
+   - Move to MkDocs
+   - Faster & less bloated
+   - ...
