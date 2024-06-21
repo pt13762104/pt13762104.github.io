@@ -15,7 +15,7 @@ Khi chúng ta muốn xóa phần tử thứ $i$ trong mảng p thì ta sẽ cậ
 Khi chúng ta xử lý được hết $[l,r]$ trong mảng thì chỉ cần cnp để tìm đáp án.
 
 <details>
-<summary>Code:</summary>
+<summary>Code</summary>
 ```c++ linenums="1"
 void update(int *p, int *prev, int *next, int i, long long &sum, int size)
 {
@@ -104,7 +104,7 @@ Với subtask 3, ta chỉ cần phải chèn và xóa các phần tử 1 cách t
 Ta vẫn sử dụng chặt nhị phân để tìm kết quả (chuyển $[l,r]$ thành $[l',r']$ gần nhất mà $l',r'$ thuộc mảng).
 
 <details>
-<summary>Code:</summary>
+<summary>Code</summary>
 ```c++ linenums="1"
 void add(map<int, int> &s, int i, int x, long long &sum)
 {
@@ -207,7 +207,7 @@ Ta sử dụng RMQ để tìm phần tử gần nhất với 2 đầu mút nằm
 Ta sẽ sắp xếp lại các truy vấn theo $l$ rồi theo $r$ để tính vị trí của $l',r'$ nhanh hơn (mất $O(q*n/BLOCK)$ thay vì $O(q*n/BLOCK*\log(BLOCK))$).
 Việc xử lý như subtask 2 sẽ mất $O(BLOCK*n)$.
 <details>
-<summary>Code:</summary>
+<summary>Code</summary>
 ```c++ linenums="1"
 struct result
 {
