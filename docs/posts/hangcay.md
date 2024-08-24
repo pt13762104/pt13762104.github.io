@@ -1,7 +1,7 @@
 ---
 date: 2024-06-17
 categories:
-  - My site
+  - CP
 ---
 # Hàng cây
 ## 1. Subtask 1
