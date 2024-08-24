@@ -4,7 +4,7 @@ categories:
   - CP
 ---
 # CHUNGKHOAN
-Recently I revisited this problem which was intended to solve in $O(n)$: https://oj.vnoi.info/problem/cn1_chungkhoan (the problem asks to find the largest subarray which has $max-min<=T$). But I can only think of a $O(n*log(n))$ solution, so I coded the fastest $O(n*log(n))$ solution yet using vectorized binary search and linear sparse table:
+Recently I revisited this [problem](https://oj.vnoi.info/problem/cn1_chungkhoan) which was intended to solve in $O(n)$ (the problem asks to find the largest subarray which has $max-min<=T$). But I can only think of a $O(n*log(n))$ solution, so I coded the fastest $O(n*log(n))$ solution yet using vectorized binary search and linear sparse table:
 
 ??? info "Code"
 
