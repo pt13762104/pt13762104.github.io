@@ -5,7 +5,7 @@ categories:
 title: Shortest path between 2 special nodes
 ---
 
-This problem is one of our practice problems, and I have been struggling a bit to solve it. There's a "solution" on GFG: https://www.geeksforgeeks.org/find-the-shortest-distance-between-any-pair-of-two-different-good-nodes/.
+This problem is one of our practice problems, and I have been struggling a bit to solve it. There's a ["solution"](https://www.geeksforgeeks.org/find-the-shortest-distance-between-any-pair-of-two-different-good-nodes/) on GFG that's basically useless.
 
 The solution is plainly $O(VE)$ and basically have no relations to the actual solution.
 
