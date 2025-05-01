@@ -158,9 +158,18 @@ I have created a [Codeforces 1952J language](https://github.com/toxicpie/based-l
             Yoshi();
     }
     ```
-*: Tested with my selection sort code, 3000 rounds:
+*: Selection sort performance:
+
+$n=3000$:
 
 | Implementation | Runtime |
 |----------------|---------|
 | Reference      | 41.0s   |
 | Compiled       | 2ms     |
+
+$n=5000$:
+
+| Implementation | Runtime  |
+|----------------|----------|
+| Reference      | 123.3s   |
+| Compiled       | 6ms      |
