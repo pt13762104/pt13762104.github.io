@@ -1,5 +1,5 @@
 ---
-date: 2024-06-17
+date: 2025-05-01
 categories:
   - Fun
 title: Run Codeforces 1952J codes 20000x faster
@@ -159,6 +159,7 @@ I have created a [Codeforces 1952J language](https://github.com/toxicpie/based-l
     }
     ```
 *: Tested with my selection sort code, 3000 rounds:
+
 | Implementation | Runtime |
 |----------------|---------|
 | Reference      | 41.0s   |
