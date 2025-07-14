@@ -13,7 +13,26 @@ All benchmarks are done using llama.cpp `build: 5891 (0d922676)` with mmap disab
 Compilation options: `-DGGML_NATIVE=off -DGGML_OPENMP=off -DGGML_CPU_ARM_ARCH=armv8.2-a+fp16+dotprod`
 
 ## 1st run: One A55 core vs. one A76 core
+### One A55 core
 | model                          |       size |     params | backend    | threads | mmap |            test |                  t/s |
 | ------------------------------ | ---------: | ---------: | ---------- | ------: | ---: | --------------: | -------------------: |
 | gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       1 |    0 |           pp512 |          3.21 ± 0.00 |
 | gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       1 |    0 |           tg128 |          1.05 ± 0.00 |
+### One A76 core
+| model                          |       size |     params | backend    | threads | mmap |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ---: | --------------: | -------------------: |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       1 |    0 |           pp512 |         13.65 ± 0.00 |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       1 |    0 |           tg128 |          5.80 ± 0.00 |
+## 2nd run: Two A55 cores vs. two A76 cores
+### Two A55 cores
+| model                          |       size |     params | backend    | threads | mmap |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ---: | --------------: | -------------------: |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       2 |    0 |           pp512 |          6.46 ± 0.00 |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       2 |    0 |           tg128 |          2.13 ± 0.00 |
+### Two A76 cores (best configuration)
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | --------------: | -------------------: |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       2 |           pp512 |         22.02 ± 0.00 |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       2 |           tg128 |          6.65 ± 0.00 |
+
+## 3rd run: 6 A55 cores vs all cores
