@@ -35,7 +35,7 @@ Compilation options: `-DGGML_NATIVE=off -DGGML_OPENMP=off -DGGML_CPU_ARM_ARCH=ar
 | gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       2 |    0 |           pp512 |          6.46 ± 0.00 |
 | gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       2 |    0 |           tg128 |          2.13 ± 0.00 |
 
-### Two A76 cores (best configuration)
+### Two A76 cores (best configuration for TG, 2-3t/s more in real world usage compared to all cores)
 
 | model                          |       size |     params | backend    | threads | mmap |            test |                  t/s |
 | ------------------------------ | ---------: | ---------: | ---------- | ------: | ---: | --------------: | -------------------: |
@@ -43,3 +43,16 @@ Compilation options: `-DGGML_NATIVE=off -DGGML_OPENMP=off -DGGML_CPU_ARM_ARCH=ar
 | gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       2 |    0 |           tg128 |          6.81 ± 0.00 |
 
 ## 3rd run: 6 A55 cores vs all cores
+### 6 A55 cores
+
+| model                          |       size |     params | backend    | threads | mmap |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ---: | --------------: | -------------------: |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       6 |    0 |           pp512 |         18.18 ± 0.00 |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       6 |    0 |           tg128 |          4.41 ± 0.00 |
+
+### All cores (best configuration for PP, but 2xA76 has negligible difference)
+
+| model                          |       size |     params | backend    | threads | mmap |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ---: | --------------: | -------------------: |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       8 |    0 |           pp512 |         27.51 ± 0.00 |
+| gemma3n E2B Q4_0               |   3.34 GiB |     4.46 B | CPU        |       8 |    0 |           tg128 |          5.26 ± 0.00 |
