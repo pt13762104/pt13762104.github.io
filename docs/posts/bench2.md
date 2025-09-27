@@ -1,5 +1,5 @@
 ---
-date: 2025-07-14
+date: 2025-09-27
 categories:
     - Fun
 title: Qwen3 0.6B benchmarks
