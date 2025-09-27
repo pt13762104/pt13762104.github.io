@@ -6,7 +6,7 @@ title: Qwen3 0.6B benchmarks
 ---
 Here are a few benchmarks of Qwen3 0.6B (Q4_0) on a Dimensity 9000+:
 
-Specs: 64 bit LPDDR5X-7500 (60.0 GB/s), 1xX2 (3350MHz), 3xA710 (3200 MHz), 4xA510 (1804MHz)
+Specs: 64 bit LPDDR5X-7500 (60.0 GB/s), 1xX2 (3350MHz), 3xA710 (3200 MHz), 4xA510 (1800MHz)
 
 All benchmarks are done using llama.cpp `build: 6602 (72b24d96) with clang version 20.1.8 (Fedora 20.1.8-4.fc42) for aarch64-redhat-linux-gnu` with ubatch = 64. Tests on A510 are done with mmap enabled.
 
