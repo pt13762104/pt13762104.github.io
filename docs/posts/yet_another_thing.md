@@ -1,5 +1,5 @@
 ---
-date: 2025-02-14
+date: 2026-02-14
 categories:
     - Fun
 title: An useless operating system

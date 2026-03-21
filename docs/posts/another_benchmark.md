@@ -1,8 +1,8 @@
 ---
-date: 2025-02-08
+date: 2026-02-08
 categories:
     - Fun
-title: Does the Dimensity 9000 hold well in the benchmarks? (again)
+title: Does the Dimensity 9000 and 10750H hold well in the benchmarks? (again)
 ---
 
 I've taken a look at https://www.phoronix.com/review/16-armlinux-sep2018/, and decided to test the Dimensity 9000 on these benchmarks.
@@ -13,5 +13,5 @@ The X2-core was completely destroying anything else in 2018 (obviously), and the
 
 I've also tested a few benchmarks out of my 10750H and it got about 4960X-5960X performance: https://openbenchmarking.org/result/2602287-YOSH-YOSHI9552.
 
-A summary: https://docs.google.com/spreadsheets/d/1MC92otAyJLy6xrpeCMe5lM960kpfgVo6Gvjeg3wx6aE/edit?usp=sharing 
+A summary: https://docs.google.com/spreadsheets/d/1MC92otAyJLy6xrpeCMe5lM960kpfgVo6Gvjeg3wx6aE/edit?usp=sharing. 
 
