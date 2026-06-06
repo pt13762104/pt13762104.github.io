@@ -59,10 +59,10 @@ Comment: Clearly the GTX 1660 Ti is ALU bottlenecked in the decode phase. The Ma
 
 | Benchmark      |CPU 1|CPU 1.1| CPU 2   | CPU 2.1 |
 |--------------|-|-|---------|---------|
-| pp1024        |81.03|99.55 | 71.26 | 84.24 |
-| tg256         |14.99|17.20 | 17.82  | 20.48  |
-| pp1024 @ d4096|42.93|53.23 | 54.26 | 64.25 |
-| tg256 @ d4096 |12.43|14.06 | 14.88 | 17.29   |
+| pp1024        |80.67|103.53 | 71.26 | 84.24 |
+| tg256         |15.10|17.87 | 17.82  | 20.48  |
+| pp1024 @ d4096|42.99|53.76 | 54.26 | 64.25 |
+| tg256 @ d4096 |12.68|14.01 | 14.88 | 17.29   |
 
 Comment: Slightly better scaling than LiteRT-LM for CPU 1, but objectively worse performance.
 
