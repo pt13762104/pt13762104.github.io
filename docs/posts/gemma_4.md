@@ -12,6 +12,7 @@ LiteRT-LM model: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-l
 llama.cpp Q4_0 model: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf/resolve/main/gemma-4-E2B_q4_0-it.gguf
 
 We'll denote the hardware as follows:
+
 | ID      | Info                                                  |
 |---------|-------------------------------------------------------|
 | CPU 1   | Dimensity 9000+ (A710 = 1.8 GHz, X2 = 2.55 GHz)       |
