@@ -6,6 +6,9 @@ theme:
       - content.code.copy
     icon:
       logo: material/home
+    palette:
+      primary: green
+      accent: light green
 plugins:
     - blog:
           blog_dir: .
