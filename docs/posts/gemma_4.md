@@ -45,15 +45,14 @@ Benchmarks:
 | pp1024    | 151.98  | 184.57 |153.96|211.37|
 | tg256 @ d1024     | 15.13  | 16.07   |17.23|20.45|
 
-Comment: Power efficiency of the CPU is poor and scaling is sub-linear. TG is inherently memory bottlenecked.
+Comment: Power efficiency of the CPU is poor. TG is inherently memory bottlenecked. CPU 2 demonstrates much better scaling.
 
 | Benchmark | GPU 1  | GPU 2   | GPU 2.1 |
 |-----------|--------|---------|---------|
 | pp1024    | 874.90 | 4877.41 | 4411.52 |
 | tg256 @ d1024    | 19.16  | 98.96   | 79.00   |
 
-Comment: Clearly the GTX 1660 Ti is ALU bottlenecked in the decode phase.
-
+Comment: Clearly the GTX 1660 Ti is ALU bottlenecked in the decode phase. The Mali-G710 MP10 was really fast compared to the CPUs.
 
 ## llama.cpp Q4_0
 
@@ -65,7 +64,7 @@ Comment: Clearly the GTX 1660 Ti is ALU bottlenecked in the decode phase.
 | pp1024 @ d4096|42.93|53.23 | 54.26 | 64.25 |
 | tg256 @ d4096 |12.43|14.06 | 14.88 | 17.29   |
 
-Comment: Slightly better scaling than LiteRT-LM, but objectively worse performance.
+Comment: Slightly better scaling than LiteRT-LM for CPU 1, but objectively worse performance.
 
 | Benchmark      | GPU 2   | GPU 2.1 |
 |----------------|---------|---------|
