@@ -5,7 +5,7 @@ categories:
 title: Taking a look at Gemma 4 E2B (QAT)
 ---
 
-A continuation of the 3N E2B benchmarks, now with hardware and faster models.
+A continuation of the 3N E2B benchmarks, now with faster hardware and models.
 
 LiteRT-LM model: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/blob/main/gemma-4-E2B-it.litertlm
 
