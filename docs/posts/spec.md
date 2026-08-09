@@ -87,13 +87,13 @@ Just kidding, no. It will only get much worse later on...
 
 The bad:
 
-First, the failed Perl tests. I tried the same patching method on a different Arm device, couldn't get it to work. As with everything that I don't like, the choice is just to disable the tests and move on.
+First, the failed Perl tests. I tried the same patching method on a different ARM device, couldn't get it to work. As with everything that I don't like, the choice is just to disable the tests and move on.
 
 Now, for the compatibility flags.
 
 For SPEC06/17 on x86, you only really need `-Wno-error=template-body` for GCC 15+, which is fine.
 
-But the situation isn't as smooth-sailing on Arm.
+But the situation isn't as smooth-sailing on ARM.
 
 The ugly:
 
@@ -103,7 +103,7 @@ Even worse, most of the time is spent on configuring and testing, which means mo
 
 It's not the only part that fails, by the way. That part was commented out.
 
-Running SPEC06 on Arm wasn't an exactly satisfying experience either. Five compliation errors means FIVE different compatibility flags, *just for an obsolete benchmark.*
+Running SPEC06 on ARM wasn't an exactly satisfying experience either. Five compliation errors means FIVE different compatibility flags, *just for an obsolete benchmark.*
 
 Figuring out how to run SPEC on Clang was another painful experience. There's a flag, `-fdelayed-template-parsing`, that fixes 523's error. I can't find any documentation about this flag.
 
@@ -113,9 +113,9 @@ Figuring out how to run SPEC on Clang was another painful experience. There's a 
 
 As the name "adventure" suggests, I had spent a lot of my time running SPEC on any device that I have on hand. https://pt13762104.github.io/benchview/ is my collection of (best) SPEC results.
 
-(Thanks to Titanic for the 5950X result.)
+(Thanks to Titanic (Chips And Cheese) for the 5950X result.)
 
-I've wasted a measurable amount of time dealing with 462 on the A35, but to no avail, it was still crashing.
+I've wasted a measurable amount of time dealing with 429 on the A35, but to no avail, it was still crashing.
 
 As reflected in the results, 520 and 541, and (502, 505 to a lesser extent) were having significant memory-related bottlenecks. 520 is the worst offender of them all being mainly memory latency bottlenecked.
 
