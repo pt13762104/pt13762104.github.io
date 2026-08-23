@@ -31,7 +31,7 @@ The chip is locked at 1.6 GHz (67x multiplier at 24 MHz base clock). Rockchip pr
 
 An operating point, or an "OPP" is described by voltage and frequency points.
 
-Here's the stable voltages for my RK3326:
+Here are the stable voltages for my RK3326:
 
 | Frequency | Voltage |
 |----------------|---------|

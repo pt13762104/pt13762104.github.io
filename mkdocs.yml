@@ -9,6 +9,8 @@ theme:
     palette:
       primary: green
       accent: light green
+    favicon: favicon.png
+
 plugins:
     - blog:
           blog_dir: .
