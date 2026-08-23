@@ -27,7 +27,7 @@ I was on Rocknix at that time, and with the `mhz` tool, I quickly added extra op
 
 But that's when I realized... the chip is locked.
 
-The chip is locked at 1.6 GHz (67x multiplier). Rockchip probably was not planning anyone to push the clocks that high.
+The chip is locked at 1.6 GHz (67x multiplier at 24 MHz base clock). Rockchip probably was not planning anyone to push the clocks that high.
 
 An operating point, or an "OPP" is described by voltage and frequency points.
 
