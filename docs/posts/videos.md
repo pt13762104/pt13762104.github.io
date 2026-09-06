@@ -59,7 +59,7 @@ Also this is what happens if you send the video through mobile Discord:
 <source src="/discord_video.mp4" type="video/mp4">
 </video>
 
-(*Note: Discord retains the color space information, while the video's thumbnail will not reflect the correct color, the player has a 50% chance of being able to do it.*)
+(*Note: Discord retains the color space information, while the video's thumbnail will not reflect the correct color, the player has a 50% chance of being able to do it. If you take a closer look, you'll see it's an 480p H264 video.*)
 
 
 
