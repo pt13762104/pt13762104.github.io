@@ -1,0 +1,897 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pt13762104.github.io/2026/08/23/overclocking-a-meaningless-chip/">
+      
+      
+        <link rel="prev" href="../../09/spec-cpu-adventures/">
+      
+      
+        <link rel="next" href="../../../09/06/4k-hdr-videos-but-within-a-small-margin/">
+      
+      
+      <link rel="icon" href="../../../../favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Overclocking a meaningless chip - Yoshi's Island</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#part-1-overclocking-a-locked-chip" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Yoshi&#39;s Island" class="md-header__button md-logo" aria-label="Yoshi's Island" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yoshi's Island
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overclocking a meaningless chip
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Yoshi&#39;s Island" class="md-nav__button md-logo" aria-label="Yoshi's Island" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+
+    </a>
+    Yoshi's Island
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2026/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2026
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/cp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/fun/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fun
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/llm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/my-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    My site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/spec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SPEC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-overclocking-a-locked-chip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1. Overclocking a locked chip
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-overclocking-on-the-stock-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2. Overclocking on the stock kernel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-the-memory-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3. The Memory Controller
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-does-it-make-sense-to-run-stockfish-on-a-game-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 4. Does it make sense to run Stockfish on a game console?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 5. Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
+                        <time datetime="2026-08-23 00:00:00" class="md-ellipsis">August 23, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3H9m3 2 4 13 3-1-4-13-3 1M5 5v13h3V5H5M3 19v2h18v-2H3Z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../../../../category/fun/">Fun</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              5 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+
+
+  <h1>Overclocking a meaningless chip</h1>
+
+<h2 id="part-1-overclocking-a-locked-chip">Part 1. Overclocking a locked chip</h2>
+<p>It might sound a bit illogical at first, "locked" and "overclocking" doesn't usually come together. But... have you heard of "partial overclocking"?</p>
+<details class="spoiler">
+<summary>Spoiler</summary>
+<p>Does this reminds you of Tiger Lake H?</p>
+</details>
+<p>You may or may not have prepared for the chip I'm working with. It's not TGL-H, but something way worse...</p>
+<p>It's the RK3326. The chip that blew up in popularity due to the R36 series of devices. </p>
+<p>All experiments are done on a RG351M (which is another RK3326 device), with a "I don't care" personality.</p>
+<p>Back in 2023, I was discovering "CPU overclocking" options on many distros, which usually pushed the clocks from 1.3 to 1.5 GHz.</p>
+<p>At that time, I couldn't verify that claim, because I didn't really know how to do it.</p>
+<p>One day, I decided to say "1.5 GHz is NOT enough", and decided to push the clocks to the max.</p>
+<p>I was on Rocknix at that time, and with the <code>mhz</code> tool, I quickly added extra operating points and push the clocks higher and higher.</p>
+<p>But that's when I realized... the chip is locked.</p>
+<p>The chip is locked at 1.6 GHz (67x multiplier at 24 MHz base clock). Rockchip probably was not planning anyone to push the clocks that high.</p>
+<p>An operating point, or an "OPP" is described by voltage and frequency points.</p>
+<p>Here are the stable voltages for my RK3326:</p>
+<table>
+<thead>
+<tr>
+<th>Frequency</th>
+<th>Voltage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.3 GHz</td>
+<td>1.35V</td>
+</tr>
+<tr>
+<td>1.4 GHz</td>
+<td>1.35V (max rated)</td>
+</tr>
+<tr>
+<td>1.5 GHz</td>
+<td>1.40V (crashes while overheating)</td>
+</tr>
+<tr>
+<td>1.6 GHz</td>
+<td>1.50V (max, crashes while overheating)</td>
+</tr>
+</tbody>
+</table>
+<p>There's no point in doing more than 1.50V because the VRM doesn't support it; and the CPU is locked.</p>
+<p>There's a need of a "safe operating point" e.g. 1.3 GHz, or using "turbo mode" to restrict the frequency being boost ones to avoid overheating.</p>
+<p>But... Rocknix's mainline kernel wasn't up to my expectations. It had all of the good things I wanted, but except for one thing...</p>
+<h2 id="part-2-overclocking-on-the-stock-kernel">Part 2. Overclocking on the stock kernel</h2>
+<p>At first, I tried the classical "OPP" method of adding operating points. The short explanation is: the frequency is still oscilating randomly. Basically, the CPU lies to you about what frequency it actually ran.</p>
+<details class="info">
+<summary>Longer explanation</summary>
+<p>The CPU actually has bins, being L0, L1, L2 and L3 (L0 being the lowest and L3 highest). The "rockchip-avs" option controls the voltage and frequencies for the CPU based on the bins and temperatures.</p>
+<p>From <a href="https://cateee.net/lkddb/web-lkddb/POWER_AVS.html">https://cateee.net/lkddb/web-lkddb/POWER_AVS.html</a>: "AVS is a power management technique which finely controls the operating voltage of a device in order to optimize (i.e. reduce) its power consumption. At a given operating point the voltage is adapted depending on static factors (chip manufacturing process) and dynamic factors (temperature depending performance)."</p>
+<p>For example, here are the voltages based on the bins at 1.5 GHz:
+    <div class="language-dts highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">        </span><span class="nf">opp-1512000000</span><span class="cm"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">                </span><span class="n">opp-hz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x00</span><span class="w"> </span><span class="mh">0x5a1f4a00</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">                </span><span class="n">opp-microvolt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x149970</span><span class="w"> </span><span class="mh">0x149970</span><span class="w"> </span><span class="mh">0x149970</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">                </span><span class="n">opp-microvolt-L0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x149970</span><span class="w"> </span><span class="mh">0x149970</span><span class="w"> </span><span class="mh">0x149970</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">                </span><span class="n">opp-microvolt-L1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x149970</span><span class="w"> </span><span class="mh">0x149970</span><span class="w"> </span><span class="mh">0x149970</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">                </span><span class="n">opp-microvolt-L2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x13d620</span><span class="w"> </span><span class="mh">0x13d620</span><span class="w"> </span><span class="mh">0x149970</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">                </span><span class="n">opp-microvolt-L3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x1312d0</span><span class="w"> </span><span class="mh">0x1312d0</span><span class="w"> </span><span class="mh">0x149970</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">                </span><span class="n">clock-latency-ns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x9c40</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="p">};</span>
+</span></code></pre></div>
+    And, here are Rockchip-specific frequency options:
+    <div class="language-dts highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">temp-hysteresis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x1388</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">low-temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x00</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">low-temp-min-volt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0xf4240</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">low-temp-adjust-volt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x00</span><span class="w"> </span><span class="mh">0x5e8</span><span class="w"> </span><span class="mh">0xc350</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="n">clocks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x02</span><span class="w"> </span><span class="mh">0x01</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">avs-scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x04</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">max-volt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x149970</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">evb-irdrop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x61a8</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="n">nvmem-cells</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x07</span><span class="w"> </span><span class="mh">0x08</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="n">nvmem-cell-names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;cpu_leakage&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;performance&quot;</span><span class="p">;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">bin-scaling-sel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x00</span><span class="w"> </span><span class="mh">0x0d</span><span class="w"> </span><span class="mh">0x01</span><span class="w"> </span><span class="mh">0x0f</span><span class="w"> </span><span class="mh">0x02</span><span class="w"> </span><span class="mh">0x12</span><span class="w"> </span><span class="mh">0x03</span><span class="w"> </span><span class="mh">0x19</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-voltage-sel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x00</span><span class="w"> </span><span class="mh">0xc350</span><span class="w"> </span><span class="mh">0x00</span><span class="w"> </span><span class="mh">0xc351</span><span class="w"> </span><span class="mh">0xd2f0</span><span class="w"> </span><span class="mh">0x01</span><span class="w"> </span><span class="mh">0xd2f1</span><span class="w"> </span><span class="mh">0xea60</span><span class="w"> </span><span class="mh">0x02</span><span class="w"> </span><span class="mh">0xea61</span><span class="w"> </span><span class="mh">0x1869f</span><span class="w"> </span><span class="mh">0x03</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-freq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x639c0</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-volt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0xf4240</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-ch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x00</span><span class="w"> </span><span class="mh">0x00</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-sample-time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x3e8</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x0a</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x3e8</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-ref-temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x28</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">pvtm-temp-prop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0xffffffc8</span><span class="w"> </span><span class="mh">0xffffffc8</span><span class="o">&gt;</span><span class="p">;</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">thermal-zone</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;soc-thermal&quot;</span><span class="p">;</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="n">rockchip</span><span class="p">,</span><span class="n">avs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mh">0x01</span><span class="o">&gt;</span><span class="p">;</span>
+</span></code></pre></div></p>
+</details>
+<p>One day, I saw an "overclocking kernel" for the R36S, being <a href="https://github.com/teacupx/linux-r36s">https://github.com/teacupx/linux-r36s</a>. After inspection, I didn't see any "special" patching or behavior other than setting the OPPs, so I quickly tried to delete these <code>rockchip</code> options and see if it now recognizes my set frequency points correctly.</p>
+<p>It finally did. I was happy to see the RK3326 finally performing at its best, even if it meant burning itself (1.50V basically does that); or its "peak" is worse than a Skylake core sleeping.</p>
+<p>This took me months to realize these <code>rockchip</code> options are interfering with my frequency points, thus causing it to not following what I set.</p>
+<h2 id="part-3-the-memory-controller">Part 3. The Memory Controller</h2>
+<p>As I've said, why did I choose the stock kernel over the (definitely more usable) mainline kernel? The answer is explained below...</p>
+<p>The mainline kernel doesn't include DMC support. That is, it doesn't support setting memory frequencies and do frequency scaling. The memory is stuck at the RK3326 default of 333MHz (DDR3L-666), which contributes to poor performance.</p>
+<p>The memory is 1 GB of DDR3L-1600, which can be overclocked to DDR3L-2160/2112 based on my observations. (2160 is partially unstable)</p>
+<p>Here's the memory latency and bandwidth table for the RK3326 based on the RAM frequency:</p>
+<table>
+<thead>
+<tr>
+<th>Frequency</th>
+<th>Latency at 32MB test size (approximate)</th>
+<th>Bandwidth (4C Memory bandwidth test)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>333 MHz</td>
+<td>260ns</td>
+<td>2 GB/s</td>
+</tr>
+<tr>
+<td>786 MHz (stock)</td>
+<td>140ns</td>
+<td>5 GB/s</td>
+</tr>
+<tr>
+<td>924 MHz</td>
+<td>130ns</td>
+<td>6 GB/s</td>
+</tr>
+<tr>
+<td>1056 MHz</td>
+<td>120ns</td>
+<td>7.2 GB/s</td>
+</tr>
+</tbody>
+</table>
+<p>All tests are done with 1.15V IMC voltage (max) and validated for stability through Stockfish and memtester.</p>
+<p>Behavior of the memory (controller) on extreme frequencies: </p>
+<table>
+<thead>
+<tr>
+<th>Frequency</th>
+<th>Voltage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1080 MHz</td>
+<td>Unstable</td>
+</tr>
+<tr>
+<td>1104 MHz</td>
+<td>Very unstable, has a 20% chance of booting up</td>
+</tr>
+<tr>
+<td>1128 MHz</td>
+<td>Incapable of getting to EmulationStation, kernel panic</td>
+</tr>
+<tr>
+<td>1152+ MHz</td>
+<td>Does not boot</td>
+</tr>
+</tbody>
+</table>
+<h2 id="part-4-does-it-make-sense-to-run-stockfish-on-a-game-console">Part 4. Does it make sense to run Stockfish on a game console?</h2>
+<p>The answer is "It's like FurMark. While it may not find all problems, it'll find the obvious, the not-so-obvious and burn your device to near-death".</p>
+<p>Stockfish multi-threaded was the heaviest test I can apply to the RK3326. If sysbench was "100% synthetic", Stockfish is 100% synthetic mixed with a death note to the NEON units. </p>
+<p>Temperatures were up to 20 degrees higher than that of sysbench, and can go near 100 degrees C before the chip crashes.</p>
+<p>It also helps to find unstable overclocks that'll crash in a few hours, because that's reduced to only a few seconds of launching Stockfish and see if it crashes or not.</p>
+<p>While a quad core A510 cluster on 4nm barely heats up, a quad core Cortex-A35 on 28nm can radiate heat so much it's like launching my Cortex-X2 at full load.</p>
+<h2 id="part-5-conclusion">Part 5. Conclusion</h2>
+<p>While the RK3326 might be a locked chip, I actually had fun inspecting its corners and pushing it to its absolute limit. It's almost as if the chip was actually unlocked anyways. </p>
+<p>The only thing I found lacking about the chip is the inability to push the IMC voltage further, and if you care about performance, <strong>ITSELF</strong>.</p>
+<p>Sadly, even in 2026, I don't have another unlocked chip to test out overclocking. It probably wouldn't be that much anyways.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
