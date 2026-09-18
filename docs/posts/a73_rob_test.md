@@ -27,7 +27,7 @@ Here's the result:
 
 ![](/plot.png)
 
-As you can see, the inflection point is at 18. This shows that the maximum reordering capacity is probably $10 + 10 + 1 \text{ (fused branch)} + 3 + 18 \times 4$ = $96$ instructions.
+As you can see, the inflection point is at 18. This shows that the maximum reordering capacity is probably $10 + 10 + 1 \text{ (fused branch)} + 3 + 18 \times 4 = 96$ instructions.
 
 Comment: A73 has a more extreme version of Golden/Lion Cove's disproportionately small speculative register file(s) compared to the ROB. In case of the A73, the maximum reordering capacity will probably never be a bottleneck in any realistic application.
 
