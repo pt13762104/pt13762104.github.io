@@ -4,7 +4,7 @@ categories:
     - Fun
 title: A73 Reordering Capacity?
 ---
-TLDR: it's at least 86. The removal of `nop`s from the "Instruction Control" block (possibly a coalesced retire queue + PRRT?) makes it impossible to measure more, at least up to my knowledge right now.
+TLDR: It's probably 96.
 
 https://chipsandcheese.com/p/cortex-a73s-not-so-infinite-reordering-capacity
 
@@ -17,3 +17,17 @@ Here's the configuration that reached the highest inflection point of 85: `mov x
 The "move to zero" or "rename" queue seems to have a size of 48. Any more integer instructions/branch/etc inserted after these two only worsens the inflection point. I also tried to insert integer instructions in between, still nothing.
 
 So, for all practical purposes, A73 can reorder at most 86 instructions. The ROB capacity is unexplored, still. Maybe another day someone has a solution?
+
+## Update (18/9/2026)
+
+I've tried to escape the effects of the PRRT and the FP RF by interleaving blocks of renames and FP (so that the FP instructions can retire in the renaming phase).
+
+Here's the result:
+
+![](/plot.png)
+
+As you can see, the inflection point is at 18. This shows that the maximum reordering capacity is probably $10 + 10 + 1 \text{ (fused branch)} + 3 + 18 \times 4$ = $96$ instructions.
+
+Comment: A73 is somewhat like Golden Cove, where the ROB size of 512 will rarely become a bottleneck in programs. As per C&C: 
+
+> "Golden Cove’s integer register file stands out, and not in a good way. In pure integer loads, GLC may struggle to make good use of its headline grabbing 512 entry ROB because it’ll run out of integer registers before the ROB fills. However, it should not be a major issue with floating point and vector workloads, where a much smaller fraction of instructions generate integer results."
