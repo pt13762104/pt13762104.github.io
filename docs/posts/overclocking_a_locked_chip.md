@@ -150,3 +150,81 @@ While the RK3326 might be a locked chip, I actually had fun inspecting its corne
 The only thing I found lacking about the chip is the inability to push the IMC voltage further, and if you care about performance, **ITSELF**.
 
 Sadly, even in 2026, I don't have another unlocked chip to test out overclocking. It probably wouldn't be that much anyways.
+
+## Part 6. Bonus: GPU "overclocking"
+
+I've also taken a look at the GPU frequency, and as shown in https://github.com/zenmode-adri/r36-tuner-next, you can only overclock the GPU to 600 MHz. This represents a negligible increase over the 560 MHz baseline.
+
+The GPU can do a peak of 9.6 GFLOPS FP32 (8 shaders at 600 MHz).
+
+??? info "Full clpeak output"
+    ```
+        Platform: ARM Platform
+          Device: Mali-G31
+            Driver version  : 2.0 (Linux ARM64)
+            Compute units   : 1
+            Clock frequency : 600 MHz
+        
+            Global memory bandwidth (GBPS)
+              float   : 3.67
+              float2  : 4.07
+              float4  : 3.82
+              float8  : 1.55
+              float16 : 0.84
+        
+            Single-precision compute (GFLOPS)
+              float   : 9.55
+              float2  : 9.53
+              float4  : 9.53
+              float8  : 9.50
+              float16 : 8.90
+        
+            Half-precision compute (GFLOPS)
+              half   : 9.56
+              half2  : 18.98
+              half4  : 18.92
+              half8  : 18.80
+              half16 : 18.59
+        
+            No double precision support! Skipped
+        
+            Integer compute (GIOPS)
+              int   : 8.96
+              int2  : 9.21
+              int4  : 9.33
+              int8  : 9.33
+              int16 : 6.32
+        
+            Integer compute Fast 24bit (GIOPS)
+              int   : 8.96
+              int2  : 9.21
+              int4  : 9.33
+              int8  : 9.34
+              int16 : 6.32
+        
+            Integer char (8bit) compute (GIOPS)
+              char   : 8.47
+              char2  : 16.74
+              char4  : 32.24
+              char8  : 33.14
+              char16 : 31.09
+        
+            Integer short (16bit) compute (GIOPS)
+              short   : 8.47
+              short2  : 16.76
+              short4  : 17.53
+              short8  : 17.66
+              short16 : 11.71
+        
+            Transfer bandwidth (GBPS)
+              enqueueWriteBuffer              : 1.19
+              enqueueReadBuffer               : 1.36
+              enqueueWriteBuffer non-blocking : 1.20
+              enqueueReadBuffer non-blocking  : 1.40
+              enqueueMapBuffer(for read)      : 7.28
+                memcpy from mapped ptr        : 1.59
+              enqueueUnmap(after write)       : 7.37
+                memcpy to mapped ptr          : 1.51
+        
+            Kernel launch latency : 109.04 us
+    ```
