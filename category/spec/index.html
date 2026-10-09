@@ -1,0 +1,751 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pt13762104.github.io/category/spec/">
+      
+      
+        <link rel="prev" href="../my-site/">
+      
+      
+        <link rel="next" href="../../archive/2026/">
+      
+      
+      <link rel="icon" href="../../favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>SPEC - Yoshi's Island</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spec" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Yoshi&#39;s Island" class="md-header__button md-logo" aria-label="Yoshi's Island" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yoshi's Island
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SPEC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Yoshi&#39;s Island" class="md-nav__button md-logo" aria-label="Yoshi's Island" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+
+    </a>
+    Yoshi's Island
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2026/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2026
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../cp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../fun/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fun
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../llm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../my-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    My site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    SPEC
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="spec">SPEC</h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2026-08-09 00:00:00">August 9, 2026</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">SPEC</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              6 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="spec-cpu-adventures"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/">SPEC CPU adventures</a></h2>
+<h3 id="part-1-trying-spec-for-the-first-time"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/#part-1-trying-spec-for-the-first-time">Part 1. Trying SPEC for the first time</a></h3>
+<p>For a long time, SPEC has been a well-known (in some circles) benchmark. I keep hearing it from time to time, but I don't know what it does or how to use it yet. Until one day.....</p>
+<blockquote>
+<p><em>SPEC drops from the sky, including both 2006 and 2017 versions. If you know, you know.</em></p>
+</blockquote>
+<p>Now that I've gotten SPEC, the adventure begins...</p>
+<p>First installation, I immediately got an error related to Perl tests. With some patching and manifest editing, that seems to "fix" it. But then, I'll regret it later...</p>
+<blockquote>
+<p><em>"The correct way to handle SPEC is to NOT test it..."</em></p>
+</blockquote>
+<p>It was a tiring experience to do the config files, compiler flags, etc. </p>
+<p>But then, after <em>many</em> failed tries due to not having enough time, errors, etc, I got my first few results:</p>
+<ul>
+<li>Cortex-X2: 7.15</li>
+<li>Cortex-A710: 5.58</li>
+<li>Cortex-A510: 1.15</li>
+</ul>
+<p>But this is just the start...</p>
+<h3 id="part-2-do-i-really-need-different-compilers"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/#part-2-do-i-really-need-different-compilers">Part 2. Do I really need different compilers?</a></h3>
+<p>After trying out GCC and abusing it, I take a look at Clang. It was not great, to be honest.</p>
+<p>In both SPEC CPU 2006 and 2017, Clang performed consistently worse. (In most benchmarks, that is.) </p>
+<p>There was hope in seeing Clang improves 525 on x86, but that hope was short-lived. It survived from the moment I tested 525 to the first full run.</p>
+<p>On the topic of 462, the one benchmark that either tests:</p>
+<ul>
+<li>For legitimate compilers, your memory bandwidth. Very simple: About 110 for every 25GB/s of memory bandwidth.</li>
+<li>For vendored compilers, the ability to abuse the vector units and pushing the score sky-high (it's so bad to the point it doesn't even makes sense)</li>
+</ul>
+<p>ICC literally demonstrates perfect scaling and &gt;9X the performance of GCC/Clang on 462. It regressed significantly over GCC in some other benchmarks, but the 20+X performance gain of ICC in 462 literally renders the result useless.</p>
+<p>This is probably one of the reasons why 462 was never to be seen again.</p>
+<blockquote>
+<p><em>Conclusion: For SPEC (06/17), prefer GCC over Clang. ICC could be another reasonable option if you prefer breaking the rules.</em></p>
+</blockquote>
+<h3 id="part-3-does-malloc-matter"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/#part-3-does-malloc-matter">Part 3. Does <code>malloc()</code> matter?</a></h3>
+<p>The answer: Yes, <em>somewhat</em>.</p>
+<p>I heard that mimalloc and jemalloc were commonly used in SPEC results, and there's a reason for why:</p>
+<p><em>523.xalancbmk.</em> (this is the most prominent example)</p>
+<p>Using either of the <code>malloc</code> implementations literally gives you double the score. I'm not joking.</p>
+<p>There's about a 10% boost in using these, which is significant (at least, it makes I feel better about my scores, while <em>I'll still be slower than an iPad.</em>)</p>
+<h3 id="part-4-compiler-flags"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/#part-4-compiler-flags">Part 4. Compiler flags</a></h3>
+<p>In my SPEC adventure, I tested multiple flags collections.</p>
+<p>Some observations:</p>
+<ul>
+<li>
+<p>O3 is much preferred over O2 (+ autovec). Ofast doesn't seem to have much implications; can fail perlbench's signed zero test on ARM (matters only if you do reportable runs.)</p>
+</li>
+<li>
+<p>flto boosts your scores by a significant amount; <code>-march=native</code> is smaller.</p>
+</li>
+<li>
+<p><code>-mcpu</code> doesn't really matter, a 1-2% of difference at most (still noticeable, just not that much.)</p>
+</li>
+<li>
+<p><code>-funroll-loops</code> has unnoticeable effect.</p>
+</li>
+</ul>
+<p>Generally the optimal flags are <code>-O3 (or Ofast) -flto -march=native -mcpu=[CPU name] (ARM only) -ljemalloc</code>.</p>
+<p>For an equal comparison, <code>-march=native</code> might be keep at the minimum subset; or omitted entirely. On SPEC26, this flag has an even stronger effect (706/772); 525 really benefits from vectorization.</p>
+<h3 id="part-5-the-good-the-bad-and-the-ugly-about-installing-and-using-spec"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/#part-5-the-good-the-bad-and-the-ugly-about-installing-and-using-spec">Part 5. The good, the bad and the ugly about installing and using SPEC</a></h3>
+<p>The good:</p>
+<p><em>It (the tests) works on X86! I think I should stop here now!</em></p>
+<p>Just kidding, no. It will only get much worse later on...</p>
+<p>The bad:</p>
+<p>First, the failed Perl tests. I tried the same patching method on a different ARM device, couldn't get it to work. As with everything that I don't like, the choice is just to disable the tests and move on.</p>
+<p>Now, for the compatibility flags.</p>
+<p>For SPEC06/17 on x86, you only really need <code>-Wno-error=template-body</code> for GCC 15+, which is fine.</p>
+<p>But the situation isn't as smooth-sailing on ARM.</p>
+<p>The ugly:</p>
+<p>Building SPEC (yes, SPEC itself) on ARM takes a lot of time (SPEC06 only, why would I spend so much time on an obsolete benchmark? I don't know.).</p>
+<p>Even worse, most of the time is spent on configuring and testing, which means more time wasted on doing things repeatedly. Forgotting to enable GNU extensions was a mistake that costed me many rebuilds, and even then the Perl tests would still fail. </p>
+<p>It's not the only part that fails, by the way. That part was commented out.</p>
+<p>Running SPEC06 on ARM wasn't an exactly satisfying experience either. Five compliation errors means FIVE different compatibility flags, <em>just for an obsolete benchmark.</em></p>
+<p>Figuring out how to run SPEC on Clang was another painful experience. There's a flag, <code>-fdelayed-template-parsing</code>, that fixes 523's error. I can't find any documentation about this flag.</p>
+<h3 id="part-6-spec-could-literally-ran-on-anything"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/#part-6-spec-could-literally-ran-on-anything">Part 6. SPEC could literally ran on anything!</a></h3>
+<p><em>Except for a single benchmark that kept crashing, probably due to ISA differences.</em></p>
+<p>As the name "adventure" suggests, I had spent a lot of my time running SPEC on any device that I have on hand. <a href="https://pt13762104.github.io/benchview/">https://pt13762104.github.io/benchview/</a> is my collection of (best) SPEC results.</p>
+<p>(Thanks to Titanic (Chips And Cheese) for the 5950X result.)</p>
+<p>I've wasted a measurable amount of time dealing with 429 on the A35, but to no avail, it was still crashing.</p>
+<p>As reflected in the results, 520 and 541, and (502, 505 to a lesser extent) were having significant memory-related bottlenecks. 520 is the worst offender of them all being mainly memory latency bottlenecked.</p>
+<p>On my phone, SPEC results were quite inconsistent. I don't know why, but it seems like the phone is actually doing it at 2.55GHz at times (possibly throttling?) instead of 3.35GHz. </p>
+<p>At least I got a 7.68 (the result reflected above is a best-of-2, which is 7.71) and two 7.62s with it, which isn't bad, but the poor 520 result agains shows how high-latency LPDDR can hurt performance.</p>
+<p>There's a 17% SMT gain on Skylake, which can be seen here: <a href="https://www.youtube.com/watch?v=zx6ZFyRa-Hs">https://www.youtube.com/watch?v=zx6ZFyRa-Hs</a>. </p>
+<p>Also, I've tried to run some MT benchmarks, but the results were significantly worse than ICC (~20% based on comparable SPEC results), with 505 on ICC literally doubling the rate.</p>
+<h3 id="part-7-was-there-anything-more-to-explore"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/#part-7-was-there-anything-more-to-explore">Part 7. Was there anything more to explore?</a></h3>
+<p>Given that SPEC26 is out, and I'm eager to try it out, it's almost as if I've fully beaten the dead horse that is SPEC17.</p>
+<p>But there're still a few interesting things left:</p>
+<ul>
+<li>
+<p>Figuring how to get a 10 on my 7840U. (This wasn't interesting, it was rather tiring and repetitive, and may even be counted as gambling.)</p>
+</li>
+<li>
+<p>Running rate-N benchmarks (N=2..MAX) to see SMT performance gains and thread scaling.</p>
+</li>
+<li>
+<p>Doing more runs with stats, which I only knew how to do it recently (thanks <a href="https://jia.je">https://jia.je</a>).</p>
+</li>
+</ul>
+<h3 id="conclusion"><a class="toclink" href="../../2026/08/09/spec-cpu-adventures/#conclusion">Conclusion</a></h3>
+<p>SPEC CPU is an interesting benchmark, to say the least. Workloads demonstrates diversity and exercises different parts of the system, including memory-heavy workloads. </p>
+<p>Compared to Geekbench, SPEC (06/17) demonstrates less ISA gains and underrates small cores (like A76, which Skylake has a 30% PPC advantage, while on Geekbench 7 that gap reduces to only 15%.)</p>
+<p>To end the article, here's a logged SPEC17 result, the first one with the <code>perf</code> metrics:</p>
+<p><img alt="" src="https://pt13762104.github.io/spec.jpg" /></p>
+<blockquote>
+<p><em>To be continued...</em></p>
+</blockquote>
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
