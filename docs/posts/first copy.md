@@ -1,0 +1,13 @@
+---
+date: 2026-10-21
+categories:
+  - My site (v3.1)
+---
+
+This is version 3.1 of the site, after 3 years.
+
+Also see version 6.0 here: https://pt13762104.github.io/newsite-v5.0/.
+
+- New features:
+    - Move to Zensical
+    - ...
