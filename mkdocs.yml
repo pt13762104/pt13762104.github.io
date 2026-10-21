@@ -1,5 +1,6 @@
 site_name: Yoshi's Island
 site_url: https://pt13762104.github.io/
+repo_url: https://github.com/pt13762104/pt13762104.github.io
 theme:
     name: material
     features:

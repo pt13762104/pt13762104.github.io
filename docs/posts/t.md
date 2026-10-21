@@ -6,6 +6,12 @@ title: Image slider test
 ---
 I've grabbed the image slider code from https://clamtech.org to do my own comparisons. Here's a demo:
 <style>
+.caption {
+  text-align: center;
+  color: rgb(200, 200, 200);
+  font-size: 0.85em;
+  font-family: serif;
+}
 .slidercontrol {
   text-align: center;
   padding-top: 5px;
