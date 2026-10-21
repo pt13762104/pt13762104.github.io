@@ -5,7 +5,15 @@ categories:
 title: Image slider test
 ---
 I've grabbed the image slider code from https://clamtech.org to do my own comparisons. Here's a demo:
-
+<style>
+.slidercontrol {
+  text-align: center;
+  padding-top: 5px;
+  color: rgb(175, 157, 157);
+  font-size: 0.85em;
+  font-family: serif;
+}
+</style>
 <div id='nvencuhq' style='float: center;'></div>
 <div id='picslider' style='display: none'>
 nvencuhq#
