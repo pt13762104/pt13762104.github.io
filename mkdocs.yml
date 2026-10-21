@@ -7,8 +7,9 @@ theme:
       - content.code.copy
     icon:
       logo: material/home
+      repo: fontawesome/brands/github
     palette:
-      primary: green
+      primary: light green
       accent: light green
     favicon: favicon.png
 
