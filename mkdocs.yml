@@ -9,7 +9,7 @@ theme:
       logo: material/home
       repo: fontawesome/brands/github
     palette:
-      primary: light green
+      primary: green
       accent: light green
     favicon: favicon.png
 
